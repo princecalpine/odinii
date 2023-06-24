@@ -1,0 +1,22 @@
+package application;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import base.Base;
+import objectRepository.LoginPage;
+
+public class Logintest extends Base {
+
+	@Test
+	public static void basePageNavigation() throws IOException {
+		driver = initializeDriver();
+		driver.get("http://10.40.130.30:1138/");
+		LoginPage l = new LoginPage(driver);
+		l.EmailId().sendKeys("prince.cl.ext@perkinelmer.com");
+		l.Password().sendKeys("prince");
+		l.Submit().click();
+
+	}
+}

@@ -1,0 +1,16 @@
+package ODINII.Adminpanel;
+
+import java.io.IOException;
+
+import base.Base;
+
+public class Logintest extends Base {
+	
+	
+	  public static void basePageNavigation() throws IOException
+	{
+		driver=initializeDriver();
+		driver.get("https://google.com/");
+		
+	}
+}

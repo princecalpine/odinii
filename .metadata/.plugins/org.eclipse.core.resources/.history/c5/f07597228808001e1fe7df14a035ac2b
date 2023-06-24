@@ -1,0 +1,3 @@
+browser=chrome
+URL=preproduction.telomerediagnostics.com
+chromeDriver=/Users/prince/Downloads/Seaport content/Selenium/chromedriver

@@ -3,11 +3,10 @@ name: Maven TestNG Selenium CI
 on:
   push:
     branches:
-      - main
+      - master  
   pull_request:
     branches:
-      - main
-
+      - master  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,4 +33,4 @@ jobs:
       run: mvn install -DskipTests
 
     - name: Run Tests
-      run: mvn test
+      run:

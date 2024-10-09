@@ -9,14 +9,8 @@ on:
       - main
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-
-    services:
-      selenium:
-        image: selenium/standalone-chrome:latest
-        ports:
-          - 4444:4444
 
     steps:
     - name: Checkout code
@@ -39,5 +33,5 @@ jobs:
     - name: Install dependencies
       run: mvn install -DskipTests
 
-    - name: Run TestNG Tests
+    - name: Run Tests
       run: mvn test
